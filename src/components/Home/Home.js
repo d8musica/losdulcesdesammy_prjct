@@ -10,9 +10,6 @@ const Home = () => {
       <div className='container'>
 
         <div className='row'>
-
-        </div>
-        <div className='row'>
           <div className='col s12'>
             <Carousel options={{ fullWidth: false, indicators:true }}>
               <div className='white'>

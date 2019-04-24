@@ -10,35 +10,35 @@ const Slideshow = () => {
       <Fragment>
 
         <Carousel options={{fullWidth: true,indicators: true}} className="white-text center card-panel">
-          <div className="teal">
-            <h2>
+          <div style={{backgroundColor: "#dbcaa9"}}>
+            <h2 className="quesha-font">
               First Panel
             </h2>
-            <p>
+            <p className="avenir-font">
               This is your first panel
             </p>
           </div>
-            <div className="teal">
-              <h2>
+            <div style={{backgroundColor: "#f1b8a8"}}>
+              <h2 className="quesha-font">
                 Second Panel
               </h2>
-              <p>
+              <p className="avenir-font">
                 This is your second panel
               </p>
             </div>
-            <div className="teal">
-              <h2>
+            <div style={{backgroundColor: "#dbcaa9"}}>
+              <h2 className="quesha-font">
                 Third Panel
               </h2>
-              <p>
+              <p className="avenir-font">
                 This is your third panel
               </p>
             </div>
-            <div className="teal">
-              <h2>
+            <div style={{backgroundColor: "#9f684f"}}>
+              <h2 className="quesha-font">
                 Fourth Panel
               </h2>
-              <p>
+              <p className="avenir-font">
                 This is your fourth panel
               </p>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router,Route} from "react-router-dom";
 
 import 'materialize-css/dist/css/materialize.min.css'
+import './components/Fonts.css'
 
 import Header from './components/Header/Header.js'
 import Home from './components/Home/Home.js'
@@ -17,9 +18,12 @@ class App extends Component {
       <Router>
         <div className="App">
           <Header/>
-          <Slideshow/>
-          <Route exact path='/' component={Home}></Route>
+
+          <Route exact path='/' component={Slideshow}></Route>
           <Route exact path='/inicio' component={HomeAux}></Route>
+          <Route exact path='/organizaciones' component={HomeAux}></Route>
+          <Route exact path='/productos' component={Home}></Route>
+
           <Footer/>
         </div>
       </Router>
