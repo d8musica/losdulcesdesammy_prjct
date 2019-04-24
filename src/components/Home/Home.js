@@ -15,16 +15,16 @@ const Home = () => {
           <div className='col s12'>
             <Carousel options={{ fullWidth: false, indicators:true }}>
               <div className='white'>
-                <img className="img-banner" src={Img} alt=""></img>
+                <img className="img-banner" src={Img} alt=""/>
               </div>
               <div className='white'>
-                <img className="img-banner" src={Img} alt=""></img>
+                <img className="img-banner" src={Img} alt="" />
               </div>
               <div className='white'>
-                <img className="img-banner" src={Img} alt=""></img>
+                <img className="img-banner" src={Img} alt=""/>
               </div>
               <div className='white'>
-                <img className="img-banner" src={Img} alt=""></img>
+                <img className="img-banner" src={Img} alt=""/>
               </div>
             </Carousel>
           </div>
