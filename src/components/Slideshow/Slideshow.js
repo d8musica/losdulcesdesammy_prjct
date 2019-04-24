@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import './HomeAux.css'
-import Img1 from './img/jugos.jpeg'
-import Img2 from './img/mesas.jpeg'
+import React, {Fragment} from 'react';
+import {Carousel,Modal} from 'react-materialize';
+import Img1 from './img1.png'
+
 
 const Slideshow = () => {
 
@@ -9,40 +9,58 @@ const Slideshow = () => {
     return (
       <Fragment>
 
-<div className="slideshow-container">
+        <Carousel options={{fullWidth: true,indicators: true}} className="white-text center card-panel">
+          <div className="teal">
+            <h2>
+              First Panel
+            </h2>
+            <p>
+              This is your first panel
+            </p>
+          </div>
+            <div className="teal">
+              <h2>
+                Second Panel
+              </h2>
+              <p>
+                This is your second panel
+              </p>
+            </div>
+            <div className="teal">
+              <h2>
+                Third Panel
+              </h2>
+              <p>
+                This is your third panel
+              </p>
+            </div>
+            <div className="teal">
+              <h2>
+                Fourth Panel
+              </h2>
+              <p>
+                This is your fourth panel
+              </p>
+            </div>
+          </Carousel>
 
+          <div className="card-panel center white">
 
-<div className="mySlides fade">
-  <div className="numbertext">1 / 3</div>
-  <img alt='' src={Img1} style="width:100%"/>
-  <div className="text">Caption Text</div>
-</div>
+            <div><img alt='' src={Img1} href = "#modal1" className="modal-trigger"/>
+            <Modal id="modal1" header="Producto de temporada">
+              Temporada!!
+            </Modal></div>
 
-<div className="mySlides fade">
-  <div className="numbertext">2 / 3</div>
-  <img alt='' src={Img1} style="width:100%"/>
-  <div className="text">Caption Two</div>
-</div>
+          </div>
 
-<div className="mySlides fade">
-  <div className="numbertext">3 / 3</div>
-  <img alt='' src={Img1} style="width:100%"/>
-  <div className="text">Caption Three</div>
-</div>
-
-
-<a className="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a className="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-
-<div style="text-align:center">
-<span className="dot" onclick="currentSlide(1)">/>
-<span className="dot" onclick="currentSlide(2)">/>
-<span className="dot" onclick="currentSlide(3)">/>
-</div>
       </Fragment>
+
+
+
+
+
+
+
     );
 
 
