@@ -1,8 +1,7 @@
 import React from 'react';
-import {Navbar,NavItem} from 'react-materialize' //porque desde el yarn lo instalé
+import {Navbar} from 'react-materialize' //porque desde el yarn lo instalé
 import {Link} from "react-router-dom"
 import './Header.css' //depende de la arquitectura del proyecto la forma de llamar cosas
-import Logo from './img1.png'
 
 
 const Header = () => {
@@ -10,12 +9,19 @@ const Header = () => {
 
     return (
       <div>
-      <Navbar brand=<img src={Logo} alt="" className='neptune_logo'></img> left className='navbar-css'>
-        <div className='link-container'>
-          <Link to="/about">Quienes somos</Link>
-          <Link to="/services">Nuestros servicios</Link>
-          <Link to="/contactus">Contáctanos</Link>
-        </div>
+      <Navbar className ="Navbar" alignLinks="right">
+        <Link to="/inicio">
+          Inicio
+        </Link>
+        <Link to="/productos">
+          Nuestros Productos
+        </Link>
+        <Link to="/organizaciones">
+          Ventas institucionales
+        </Link>
+        <Link to="/contacto">
+          Contáctanos
+        </Link>
       </Navbar>
 
       </div>

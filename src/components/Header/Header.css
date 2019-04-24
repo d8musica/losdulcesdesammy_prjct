@@ -1,11 +1,3 @@
-.navbar-css {
-  background: #4db6ac;
-}
-.link-container {
-  display: flex;
-}
-@media (max-width: 996px) {
-  .link-container {
-    flex-direction: column;
-  }
+.Navbar{
+  background-color: #f69da1;
 }
