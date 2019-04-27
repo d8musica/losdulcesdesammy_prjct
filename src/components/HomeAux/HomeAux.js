@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import './HomeAux.css'
-import Img1 from './img/jugos.jpeg'
-import Img2 from './img/mesas.jpeg'
+import {Carousel} from 'react-materialize';
+import Img1 from './img/img1.jpeg'
+import Img2 from './img/img2.jpeg'
 
 const HomeAux = () => {
 
@@ -15,8 +16,40 @@ const HomeAux = () => {
         </div>
         <div className="section white">
           <div className="row container">
-            <h2 className="header">Parallax</h2>
-            <p className="blue-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+          <Carousel options={{fullWidth: true,indicators: true}} className="white-text center card-panel">
+            <div style={{backgroundColor: "#dbcaa9"}}>
+              <h2 className="quesha-font">
+                First Panel
+              </h2>
+              <p className="avenir-font">
+                This is your first panel
+              </p>
+            </div>
+              <div style={{backgroundColor: "#f1b8a8"}}>
+                <h2 className="quesha-font">
+                  Second Panel
+                </h2>
+                <p className="avenir-font">
+                  This is your second panel
+                </p>
+              </div>
+              <div style={{backgroundColor: "#dbcaa9"}}>
+                <h2 className="quesha-font">
+                  Third Panel
+                </h2>
+                <p className="avenir-font">
+                  This is your third panel
+                </p>
+              </div>
+              <div style={{backgroundColor: "#9f684f"}}>
+                <h2 className="quesha-font">
+                  Fourth Panel
+                </h2>
+                <p className="avenir-font">
+                  This is your fourth panel
+                </p>
+              </div>
+            </Carousel>
           </div>
         </div>
         <div className="parallax-container">
