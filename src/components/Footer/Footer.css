@@ -14,3 +14,15 @@
 .avenir-font{
   font-family: AvenirNext;
 }
+
+.social{
+  margin: 5px 5px;
+  padding: 1 em;
+}
+
+.social-container{
+  display: inline-flex;
+}
+.transparent{
+  background-color: transparent;
+}

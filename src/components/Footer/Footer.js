@@ -1,5 +1,12 @@
 import React from 'react';
 import './Footer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebookF,faInstagram,faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+
+
+
+
+
 
 
 const Home = () => {
@@ -18,8 +25,19 @@ const Home = () => {
             <div className="col l3 s12">
               <h5 className="white-text quesha-font">Contáctanos</h5>
               <ul>
-                <li><a className="white-text avenir-font" href="#!">IG</a></li>
-                <li><a className="white-text avenir-font" href="#!">FB</a></li>
+
+                <li className = "social-container">
+                  <a className="waves-effect btn-floating social center-align transparent" href="https://www.instagram.com/losdulcesdesamy/">
+                    <FontAwesomeIcon className="social" icon={faInstagram} size="2x"/>
+                  </a>
+                  <a className="waves-effect btn-floating social center-align transparent" href="https://www.facebook.com/losdulces.desamy.9">
+                    <FontAwesomeIcon className="social" icon={faFacebookF} size="2x"/>
+                  </a>
+                  <a className="waves-effect btn-floating social center-align transparent" href="/">
+                    <FontAwesomeIcon className="social" icon={faWhatsapp} size="2x"/>
+                  </a>
+                </li>
+
                 <li><a className="white-text avenir-font" href="#!">Email</a></li>
                 <li><a className="white-text avenir-font" href="#!">Teléfono</a></li>
               </ul>
@@ -34,7 +52,7 @@ const Home = () => {
         </div>
         <div className="footer-copyright">
           <div className="container avenir-font" >
-            © Copyright - Los dulces de samy
+            © Copyright - Los dulces de Samy
           </div>
         </div>
       </div>

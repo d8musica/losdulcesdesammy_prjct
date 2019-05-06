@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+
 import './HomeAux.css'
 import {Carousel} from 'react-materialize';
 import Img1 from './img/img1.jpeg'
